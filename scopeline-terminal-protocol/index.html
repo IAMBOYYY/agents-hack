@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scopeline — AI-assisted security testing, human-verified</title>
+<meta name="description" content="A four-stage agent pipeline runs proven open-source security tools. Every finding is reproduced and signed off by a human before it reaches you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">SCOPELINE<span>_</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">services</a></li>
+      <li><a href="#process">process</a></li>
+      <li><a href="#proof">proof</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="btn btn-primary btn-primary-desktop" href="contact.html" style="padding:10px 18px;font-size:13px;">apply for pilot</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-panel">
+    <a href="#services">services</a>
+    <a href="#process">process</a>
+    <a href="#proof">proof</a>
+    <a class="btn btn-primary" href="contact.html">apply for pilot</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="load-in">
+        <div class="eyebrow">ai-assisted &nbsp;·&nbsp; human-verified</div>
+        <h1>Find what's actually<br>exploitable.<span class="cursor" aria-hidden="true"></span></h1>
+        <p>A four-stage agent pipeline — recon, scan, validate, report — built on established open-source tools. Every finding is reproduced and signed off by a human before it reaches you.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="contact.html">apply for pilot →</a>
+          <a class="btn btn-ghost" href="#process">see how it works</a>
+        </div>
+      </div>
+      <div class="terminal load-in" style="animation-delay:.15s">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <div class="tline"><span style="color:var(--muted)">scopeline@pipeline:~$ </span><span class="cmd">run recon</span></div>
+        <div class="tline ok">[ok] endpoints mapped, scope confirmed</div>
+        <div class="tline"><span style="color:var(--muted)">scopeline@pipeline:~$ </span><span class="cmd">run scanner</span></div>
+        <div class="tline ok">[ok] candidates flagged for review</div>
+        <div class="tline"><span style="color:var(--muted)">scopeline@pipeline:~$ </span><span class="cmd">run validator</span></div>
+        <div class="tline pending">[human review] confirming each candidate…</div>
+        <div class="tline"><span style="color:var(--muted)">scopeline@pipeline:~$ </span><span class="cmd">run reporter</span></div>
+        <div class="tline ok">[ok] report.md — validated findings only</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>services</h2>
+        <p>fixed-scope engagements, written authorization required before any test starts.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="tag">01</div>
+          <h3>Web App Security Review</h3>
+          <p>OWASP Top 10 coverage — injection, broken auth, access control, exposure — validated before reporting.</p>
+        </div>
+        <div class="card">
+          <div class="tag">02</div>
+          <h3>API Security Review</h3>
+          <p>Endpoint mapping, auth and access-control testing, rate-limit and data-exposure checks.</p>
+        </div>
+        <div class="card soon">
+          <div class="tag">03 · soon</div>
+          <h3>LLM / Prompt-Injection Testing</h3>
+          <p>In development — testing AI features for prompt-injection and data-leak risk.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="section process">
+    <div class="container">
+      <div class="section-head"><h2>the pipeline</h2></div>
+      <div class="grid-4">
+        <div class="stage"><div class="n">STAGE 1</div><h3>Recon</h3><p>Maps the attack surface. Read-only, no exploitation.</p></div>
+        <div class="stage"><div class="n">STAGE 2</div><h3>Scan</h3><p>Flags candidates. Nothing is called vulnerable yet.</p></div>
+        <div class="stage mid"><div class="n">STAGE 3</div><h3>Validate</h3><p>Reproduces each candidate. Unconfirmed items stay marked, not deleted.</p></div>
+        <div class="stage"><div class="n">STAGE 4</div><h3>Report</h3><p>Plain-English summary, evidence, fixes — validated findings only.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="proof" class="section">
+    <div class="container proof-grid">
+      <div>
+        <h2>why it's different</h2>
+        <p style="margin-top:18px;">Not a scanner with a logo. Not a $30k audit you wait six weeks for. A fast, AI-assisted process with a human owning every result.</p>
+      </div>
+      <div class="bullets">
+        <div><span>▹</span><span>Every candidate finding is reproduced before it's reported — not assumed.</span></div>
+        <div><span>▹</span><span>Items tested-but-clean are disclosed, so you know what was actually checked.</span></div>
+        <div><span>▹</span><span>No testing begins without signed written authorization. No exceptions.</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container cta-box">
+      <h2>limited pilot program</h2>
+      <p>The first few engagements run free or discounted, in exchange for an honest case study. Full pipeline, full human review, zero risk to try.</p>
+      <a class="btn btn-primary" href="contact.html">apply for pilot →</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <small>© Scopeline — testing begins only after signed authorization.</small>
+    <div class="foot-links">
+      <a href="#services">services</a>
+      <a href="#process">process</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scopeline — Apply for a pilot</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .contact-wrap{max-width:640px;margin:0 auto;padding:60px 28px 100px;}
+  label{display:block;font-size:12px;margin:0 0 7px;font-weight:800;text-transform:uppercase;letter-spacing:.4px;}
+  .field{margin-bottom:20px;}
+  input,textarea{width:100%;background:#fff;border:3px solid var(--ink);padding:12px 14px;color:var(--ink);font-family:inherit;font-size:14px;}
+  input:focus,textarea:focus{outline:none;border-color:var(--red);}
+  .tag{display:inline-block;background:var(--ink);color:#fff;font-size:12px;font-weight:800;text-transform:uppercase;padding:8px 16px;margin-bottom:20px;}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a class="logo" href="index.html">SCOPELINE</a>
+    <a href="index.html" style="font-size:12.5px;font-weight:700;text-transform:uppercase;">← Back home</a>
+  </nav>
+</header>
+
+<main class="contact-wrap">
+  <div class="tag">Pilot program — limited spots</div>
+  <h1 style="font-size:34px;margin:0 0 16px;font-weight:900;text-transform:uppercase;letter-spacing:-1px;">Apply for a pilot</h1>
+  <p style="font-size:14.5px;line-height:1.7;margin:0 0 34px;font-weight:500;">Tell us about the target. No testing starts until a signed authorization is in place.</p>
+
+  <form onsubmit="return false;">
+    <div class="field"><label for="name">Name</label><input id="name" name="name" type="text" placeholder="Jane Doe" autocomplete="name"></div>
+    <div class="field"><label for="company">Company</label><input id="company" name="company" type="text" placeholder="Company or project name" autocomplete="organization"></div>
+    <div class="field"><label for="target">Target (URL or app name)</label><input id="target" name="target" type="text" placeholder="https://yourapp.com"></div>
+    <div class="field"><label for="msg">What do you want tested?</label><textarea id="msg" name="msg" rows="4" placeholder="Web app, API, specific concerns…"></textarea></div>
+    <button class="btn btn-primary" type="submit">Submit application →</button>
+  </form>
+</main>
+
+<footer>
+  <div class="foot-inner" style="justify-content:center;">
+    <div>© Scopeline — testing begins only after signed authorization.</div>
+  </div>
+</footer>
+</body>
+</html>
